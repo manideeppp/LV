@@ -6,7 +6,7 @@ const InvitationCard = () => {
   const isInView = useInView(ref, { once: true, margin: '-50px' })
 
   return (
-    <section className="relative py-12 md:py-20 px-5 bg-warm" ref={ref}>
+    <section id="invitation" className="relative py-12 md:py-20 px-5 bg-warm" ref={ref}>
       {/* Top decorative border */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
 

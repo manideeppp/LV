@@ -156,7 +156,10 @@ const HeroSection = () => {
           animate={{ y: [0, 4, 0] }}
           transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <div className="bg-white/70 backdrop-blur-lg border border-gold/25 rounded-full px-5 py-2 flex items-center gap-2 shadow-md shadow-gold/10">
+          <a
+            href="#invitation"
+            className="bg-white/70 backdrop-blur-lg border border-gold/25 rounded-full px-5 py-2 flex items-center gap-2 shadow-md shadow-gold/10 no-underline"
+          >
             <span className="text-text text-[11px] md:text-xs font-medium tracking-wide">Scroll for details</span>
             <motion.svg
               animate={{ y: [0, 3, 0] }}
@@ -169,7 +172,7 @@ const HeroSection = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7" />
             </motion.svg>
-          </div>
+          </a>
         </motion.div>
       </motion.div>
     </section>

@@ -14,11 +14,11 @@ const Footer = () => {
         className="space-y-3"
       >
         <p className="text-text-light text-sm font-light">
-          With Love & Blessings
+          With Love
         </p>
 
         <p className="text-text text-base font-medium">
-          Family of Vani & Lingareddy
+          Manideep & Ashritha
         </p>
 
         <div className="pt-3">

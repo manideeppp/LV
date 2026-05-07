@@ -34,7 +34,7 @@ const EventDetails = () => {
           </div>
           <div>
             <p className="text-xs text-text-light uppercase tracking-wider">Date</p>
-            <p className="text-lg font-serif font-semibold text-text">13 May 2026</p>
+            <p className="text-lg font-sans font-semibold text-text">13 May 2026</p>
             <p className="text-sm text-text-light">Wednesday</p>
           </div>
         </motion.div>
@@ -51,7 +51,7 @@ const EventDetails = () => {
           </div>
           <div>
             <p className="text-xs text-text-light uppercase tracking-wider">Time</p>
-            <p className="text-lg font-serif font-semibold text-text">6:30 PM</p>
+            <p className="text-lg font-sans font-semibold text-text">6:30 PM</p>
             <p className="text-sm text-text-light">Onwards</p>
           </div>
         </motion.div>
@@ -68,7 +68,7 @@ const EventDetails = () => {
           </div>
           <div>
             <p className="text-xs text-text-light uppercase tracking-wider">Venue</p>
-            <p className="text-lg font-serif font-semibold text-text">Anha Farmstay</p>
+            <p className="text-lg font-sans font-semibold text-text">Anha Farmstay</p>
             <p className="text-sm text-text-light">Garrepalle, Telangana</p>
           </div>
         </motion.div>

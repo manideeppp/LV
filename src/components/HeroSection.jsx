@@ -40,7 +40,7 @@ const HeroSection = () => {
             <img
               src={coupleImage}
               alt="Vani & Lingareddy"
-              className="w-[280px] h-[360px] md:w-[360px] md:h-[460px] object-cover object-top"
+              className="w-[300px] h-[400px] md:w-[380px] md:h-[500px] object-cover object-top"
             />
           </div>
         </div>

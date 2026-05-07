@@ -4,13 +4,13 @@ const coupleImage = '/couple.jpg'
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center px-4 py-6 bg-cream">
+    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center px-3 py-4 bg-cream">
       {/* Subtle top ornament */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="flex items-center gap-3 mb-4"
+        className="flex items-center gap-3 mb-2"
       >
         <div className="h-[1px] w-8 bg-gold/40" />
         <span className="text-gold text-sm">✦</span>
@@ -22,7 +22,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
-        className="text-lg md:text-2xl font-serif text-text-light tracking-wide text-center"
+        className="text-lg md:text-2xl font-serif text-text-light tracking-wide text-center mb-3"
       >
         Silver Jubilee Celebration
       </motion.h1>
@@ -32,7 +32,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="mt-5 relative"
+        className="mt-2 relative"
       >
         {/* Gold frame border */}
         <div className="p-[3px] rounded-2xl bg-gradient-to-br from-gold via-gold-light to-gold shadow-lg shadow-gold/20">
@@ -40,7 +40,7 @@ const HeroSection = () => {
             <img
               src={coupleImage}
               alt="Vani & Lingareddy"
-              className="w-[300px] h-[400px] md:w-[380px] md:h-[500px] object-cover object-top"
+              className="w-[85vw] max-w-[360px] h-[55vh] md:w-[400px] md:h-[520px] object-cover object-top"
             />
           </div>
         </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.2 }}
-        className="mt-6 text-center"
+        className="mt-4 text-center"
       >
         <h2 className="text-4xl md:text-6xl font-script shimmer-gold leading-tight">
           Vani & Lingareddy

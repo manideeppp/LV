@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import LoadingScreen from './components/LoadingScreen'
 import HeroSection from './components/HeroSection'
 import InvitationCard from './components/InvitationCard'
 import EventDetails from './components/EventDetails'
 import Footer from './components/Footer'
+import InvitationVideoPage from './components/InvitationVideoPage'
 
-function App() {
+function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -22,16 +24,24 @@ function App() {
 
       {!isLoading && (
         <main>
-          {/* Section 1: Hero with image */}
           <HeroSection />
-          {/* Section 2: Invitation + Event Details */}
           <InvitationCard />
-          {/* Section 3: Venue & Footer */}
           <EventDetails />
           <Footer />
         </main>
       )}
     </div>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/invitation" element={<InvitationVideoPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
